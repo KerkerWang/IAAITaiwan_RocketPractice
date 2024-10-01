@@ -1,0 +1,475 @@
+﻿@model IAAITaiwanPractice240823.Models.ViewModel.MembershipEditVM
+@using IAAITaiwanPractice240823.Models
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm("Edit", "Membership", FormMethod.Post, new { @class = "form-horizontal", role = "form", enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+    @Html.HiddenFor(model => model.Id)
+    @Html.HiddenFor(model => model.PasswordSalt)
+    @Html.HiddenFor(model => model.Password)
+    @Html.HiddenFor(model => model.CreateTime)
+    <div class="form-group">
+        <label class="col-sm-2 control-label">帳　號：</label>
+        <div class="col-sm-7">
+            @Html.EditorFor(model => model.Account, new { htmlAttributes = new { @class = "form-control", placeholder = "請輸入帳號", @readonly = "readonly" } })
+            @*<input class="form-control" placeholder="請輸入帳號">*@
+        </div>
+
+        <!--<div class="col-sm-3">
+            <span class="alertred">@Html.Raw(@ViewBag.AccountAlert)</span>
+            @if (!string.IsNullOrEmpty(ViewData.ModelState["Account"]?.Errors.FirstOrDefault()?.ErrorMessage))
+            {
+                <span class="alertred"><i class="fa fa-exclamation-circle"></i> 帳號必填</span>
+            }-->
+        @*<span class="alertred"><i class="fa fa-exclamation-circle"></i> 帳號必填</span>*@
+        <!--</div>-->
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 control-label">新密碼：</label>
+        <div class="col-sm-7">
+            @Html.EditorFor(model => model.NewPassword, new { htmlAttributes = new { @class = "form-control", placeholder = "請輸入密碼" } })
+            (不修改密碼請保持空白)
+            @*<input class="form-control" placeholder="請輸入密碼">*@
+        </div>
+        <div class="col-sm-3">
+            @if (!string.IsNullOrEmpty(ViewData.ModelState["Password"]?.Errors.FirstOrDefault()?.ErrorMessage))
+            {
+                <span class="alertred"><i class="fa fa-exclamation-circle"></i> 密碼必填</span>
+            }
+            @*<span class="alertred"><i class="fa fa-exclamation-circle"></i> 密碼必填</span>*@
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 control-label">姓　名：</label>
+        <div class="col-sm-7">
+            @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control", placeholder = "請輸入姓名" } })
+            @*<input class="form-control" placeholder="請輸入姓名">*@
+        </div>
+        <div class="col-sm-3">
+            @if (!string.IsNullOrEmpty(ViewData.ModelState["Name"]?.Errors.FirstOrDefault()?.ErrorMessage))
+            {
+                <span class="alertred"><i class="fa fa-exclamation-circle"></i> 姓名必填</span>
+            }
+            @*<span class="alertred"><i class="fa fa-exclamation-circle"></i> 姓名必填</span>*@
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 control-label">性　別：</label>
+        <div class="col-sm-7">
+            @foreach (GenderType gender in Enum.GetValues(typeof(GenderType)))
+            {
+                <label class="checkbox-inline checkbox01">
+                    @Html.RadioButtonFor(model => model.Gender, gender) @gender.ToString()
+                </label>
+            }
+            @*<label class="checkbox-inline checkbox01">
+                    <input class=" radiostyle01" type="radio" name="radio" id="radio" value="radio" /> 男
+                </label>
+                <label class="checkbox-inline checkbox01">
+                    <input class="radiostyle01" type="radio" name="radio" id="radio" value="radio" /> 女
+                </label>*@
+        </div>
+        <div class="col-sm-3">
+            @if (!string.IsNullOrEmpty(ViewData.ModelState["Gender"]?.Errors.FirstOrDefault()?.ErrorMessage))
+            {
+                <span class="alertred"><i class="fa fa-exclamation-circle"></i> 性別必填</span>
+            }
+            @*<span class="alertred"><i class="fa fa-exclamation-circle"></i> 性別必填</span>*@
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 control-label">生　日：</label>
+        <div class="col-sm-7">
+            @Html.EditorFor(model => model.BirthDate, new { htmlAttributes = new { @class = "form-control", placeholder = "請輸入生日", @readonly = "readonly" } })
+            @*<input class="form-control" placeholder="請輸入生日">*@
+        </div>
+        <div class="col-sm-3">
+            @if (!string.IsNullOrEmpty(ViewData.ModelState["BirthDate"]?.Errors.FirstOrDefault()?.ErrorMessage))
+            {
+                <span class="alertred"><i class="fa fa-exclamation-circle"></i> 生日必填</span>
+            }
+            @*<span class="alertred"><i class="fa fa-exclamation-circle"></i> 生日必填</span>*@
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 control-label">申請類別：</label>
+        <div class="col-sm-7">
+            @foreach (MemberType type in Enum.GetValues(typeof(MemberType)))
+            {
+                <label class="checkbox-inline checkbox01">
+                    @Html.RadioButtonFor(model => model.Type, type) @type.ToString()
+                </label>
+            }
+            @*<label class="checkbox-inline checkbox01">
+                    <input class=" radiostyle01" type="radio" name="radio" id="radio" value="radio" /> 正式會員
+                </label>
+                <label class="checkbox-inline checkbox01">
+                    <input class="radiostyle01" type="radio" name="radio" id="radio" value="radio" /> 準會員
+                </label>
+                <label class="checkbox-inline checkbox01">
+                    <input class=" radiostyle01" type="radio" name="radio" id="radio" value="radio" /> 個人贊助會員
+                </label>
+                <label class="checkbox-inline checkbox01">
+                    <input class="radiostyle01" type="radio" name="radio" id="radio" value="radio" /> 學生會員
+                </label>*@
+        </div>
+        <div class="col-sm-3">
+            @if (!string.IsNullOrEmpty(ViewData.ModelState["Type"]?.Errors.FirstOrDefault()?.ErrorMessage))
+            {
+                <span class="alertred"><i class="fa fa-exclamation-circle"></i> 申請類別必填</span>
+            }
+            @*<span class="alertred"><i class="fa fa-exclamation-circle"></i> 申請類別必填</span>*@
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-sm-2 control-label">連絡電話(公)：</label>
+        <div class="col-sm-7">
+            @Html.EditorFor(model => model.TelPhone, new { htmlAttributes = new { @class = "form-control", placeholder = "請輸入連絡電話(公)" } })
+            @*<input class="form-control" placeholder="請輸入通訊處">*@
+        </div>
+        <div class="col-sm-3">
+            @if (!string.IsNullOrEmpty(ViewData.ModelState["TelPhone"]?.Errors.FirstOrDefault()?.ErrorMessage))
+            {
+                <span class="alertred"><i class="fa fa-exclamation-circle"></i> 連絡電話(公)必填</span>
+            }
+            @*<span class="alertred"><i class="fa fa-exclamation-circle"></i> 通訊處必填</span>*@
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-sm-2 control-label">手機：</label>
+        <div class="col-sm-7">
+            @Html.EditorFor(model => model.MobilePhone, new { htmlAttributes = new { @class = "form-control", placeholder = "請輸入手機" } })
+            @*<input class="form-control" placeholder="請輸入通訊處">*@
+        </div>
+        <div class="col-sm-3">
+            @if (!string.IsNullOrEmpty(ViewData.ModelState["MobilePhone"]?.Errors.FirstOrDefault()?.ErrorMessage))
+            {
+                <span class="alertred"><i class="fa fa-exclamation-circle"></i> 手機必填</span>
+            }
+            @*<span class="alertred"><i class="fa fa-exclamation-circle"></i> 通訊處必填</span>*@
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-sm-2 control-label">通訊處：</label>
+        <div class="col-sm-7">
+            @Html.EditorFor(model => model.Address, new { htmlAttributes = new { @class = "form-control", placeholder = "請輸入通訊處" } })
+            @*<input class="form-control" placeholder="請輸入通訊處">*@
+        </div>
+        <div class="col-sm-3">
+            @if (!string.IsNullOrEmpty(ViewData.ModelState["Address"]?.Errors.FirstOrDefault()?.ErrorMessage))
+            {
+                <span class="alertred"><i class="fa fa-exclamation-circle"></i> 通訊處必填</span>
+            }
+            @*<span class="alertred"><i class="fa fa-exclamation-circle"></i> 通訊處必填</span>*@
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-sm-2 control-label">E-mail：</label>
+        <div class="col-sm-7">
+            @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control", placeholder = "請輸入E-mail" } })
+            @*<input class="form-control" placeholder="請輸入E-mail">*@
+        </div>
+        <div class="col-sm-3">
+            @if (!string.IsNullOrEmpty(ViewData.ModelState["Email"]?.Errors.FirstOrDefault()?.ErrorMessage))
+            {
+                <span class="alertred"><i class="fa fa-exclamation-circle"></i> E-mail必填</span>
+            }
+            @*<span class="alertred"><i class="fa fa-exclamation-circle"></i> E-mail必填</span>*@
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 control-label">國際會籍：</label>
+        <div class="col-sm-7">
+            @Html.CheckBoxFor(model => model.IsValid, new { }) 為國際縱火調查學會之當年度有效會員，請檢附會員證影本
+            @if (!String.IsNullOrEmpty(Model.CertificatePath))
+            {
+                <br />
+                <a href="@Url.Content($"~/{Model.CertificatePath}")">下載會員證影本</a>
+            }
+            <input type="file" name="File" class="file-upload-default">
+            @*<input class=" radiostyle01" name="" type="checkbox" value="" /> 為國際縱火調查學會之當年度有效會員，請檢附會員證影本*@
+        </div>
+        <div class="col-sm-3">
+            <span class="alertred">@Html.Raw(@ViewBag.FileAlert)</span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 control-label">現職單位：</label>
+        <div class="col-sm-7">
+            @Html.EditorFor(model => model.Unit, new { htmlAttributes = new { @class = "form-control", placeholder = "請輸入現職單位" } })
+            @*<input class="form-control" placeholder="請輸入現職單位">*@
+        </div>
+        <div class="col-sm-3">
+            @if (!string.IsNullOrEmpty(ViewData.ModelState["Unit"]?.Errors.FirstOrDefault()?.ErrorMessage))
+            {
+                <span class="alertred"><i class="fa fa-exclamation-circle"></i> 現職單位必填</span>
+            }
+            @*<span class="alertred"><i class="fa fa-exclamation-circle"></i> 現職單位必填</span>*@
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 control-label">職　稱：</label>
+        <div class="col-sm-7">
+            @Html.EditorFor(model => model.JobTitle, new { htmlAttributes = new { @class = "form-control", placeholder = "請輸入職稱" } })
+            @*<input class="form-control" placeholder="請輸入職稱">*@
+        </div>
+        <div class="col-sm-3">
+            @if (!string.IsNullOrEmpty(ViewData.ModelState["JobTitle"]?.Errors.FirstOrDefault()?.ErrorMessage))
+            {
+                <span class="alertred"><i class="fa fa-exclamation-circle"></i> 職稱必填</span>
+            }
+            @*<span class="alertred"><i class="fa fa-exclamation-circle"></i> 職稱必填</span>*@
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 control-label">最高學歷：</label>
+        <div class="col-sm-7">
+            @Html.EditorFor(model => model.Educational, new { htmlAttributes = new { @class = "form-control", placeholder = "請輸入最高學歷" } })
+            @*<input class="form-control" placeholder="請輸入最高學歷">*@
+        </div>
+        <div class="col-sm-3">
+            @if (!string.IsNullOrEmpty(ViewData.ModelState["Educational"]?.Errors.FirstOrDefault()?.ErrorMessage))
+            {
+                <span class="alertred"><i class="fa fa-exclamation-circle"></i> 最高學歷必填</span>
+            }
+            @*<span class="alertred"><i class="fa fa-exclamation-circle"></i> 最高學歷必填</span>*@
+        </div>
+    </div>
+    <div class="boxg">
+        <h4 class="col-sm-2"><i class="fa fa-briefcase"></i> 服務經歷</h4>
+
+        <!-- 服務經歷1 -->
+        <div class="form-group">
+            <label class="col-sm-2 control-label">服務單位：</label>
+            <div class="col-sm-7">
+                @Html.EditorFor(model => model.HistoryUnit1, new { htmlAttributes = new { @class = "form-control", placeholder = "請輸入服務單位" } })
+                @*<input class="form-control" placeholder="請輸入服務單位">*@
+            </div>
+            <div class="col-sm-3">
+                @if (!string.IsNullOrEmpty(ViewData.ModelState["HistoryUnit1"]?.Errors.FirstOrDefault()?.ErrorMessage))
+                {
+                    <span class="alertred"><i class="fa fa-exclamation-circle"></i> 服務單位必填</span>
+                }
+                @*<span class="alertred"><i class="fa fa-exclamation-circle"></i> 服務經歷必填</span>*@
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">職　稱：</label>
+            <div class="col-sm-7">
+                @Html.EditorFor(model => model.HistoryJobTitle1, new { htmlAttributes = new { @class = "form-control", placeholder = "請輸入職稱" } })
+                @*<input class="form-control" placeholder="請輸入職稱">*@
+            </div>
+            <div class="col-sm-3">
+                @if (!string.IsNullOrEmpty(ViewData.ModelState["HistoryJobTitle1"]?.Errors.FirstOrDefault()?.ErrorMessage))
+                {
+                    <span class="alertred"><i class="fa fa-exclamation-circle"></i> 職稱必填</span>
+                }
+                <!-- <span class="alertred"><i class="fa fa-exclamation-circle"></i> 職稱必填</span> -->
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">起：</label>
+            <div class="col-sm-2">
+                @Html.EditorFor(model => model.StartYear1, new { htmlAttributes = new { @class = "form-control", placeholder = "年" } })
+                @*<input class="form-control" placeholder="年">*@
+            </div>
+            <div class="col-sm-2">
+                @Html.EditorFor(model => model.StartMonth1, new { htmlAttributes = new { @class = "form-control", placeholder = "月" } })
+                @*<input class="form-control" placeholder="月">*@
+            </div>
+            <div class="col-sm-3">
+                @if (!string.IsNullOrEmpty(ViewData.ModelState["StartYear1"]?.Errors.FirstOrDefault()?.ErrorMessage))
+                {
+                    <span class="alertred"><i class="fa fa-exclamation-circle"></i> 年必填</span>
+                }
+                @if (!string.IsNullOrEmpty(ViewData.ModelState["StartMonth1"]?.Errors.FirstOrDefault()?.ErrorMessage))
+                {
+                    <span class="alertred"><i class="fa fa-exclamation-circle"></i> 月必填</span>
+                }
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">迄：</label>
+            <div class="col-sm-2">
+                @Html.EditorFor(model => model.EndYear1, new { htmlAttributes = new { @class = "form-control", placeholder = "年" } })
+                @*<input class="form-control" placeholder="年">*@
+            </div>
+            <div class="col-sm-2">
+                @Html.EditorFor(model => model.EndMonth1, new { htmlAttributes = new { @class = "form-control", placeholder = "月" } })
+                @*<input class="form-control" placeholder="月">*@
+            </div>
+            <div class="col-sm-3">
+                @if (!string.IsNullOrEmpty(ViewData.ModelState["EndYear1"]?.Errors.FirstOrDefault()?.ErrorMessage))
+                {
+                    <span class="alertred"><i class="fa fa-exclamation-circle"></i> 年必填</span>
+                }
+                @if (!string.IsNullOrEmpty(ViewData.ModelState["EndMonth1"]?.Errors.FirstOrDefault()?.ErrorMessage))
+                {
+                    <span class="alertred"><i class="fa fa-exclamation-circle"></i> 月必填</span>
+                }
+            </div>
+        </div>
+        <!-- 服務經歷1 end -->
+        <!-- 服務經歷2 -->
+        <div class="form-group">
+            <label class="col-sm-2 control-label">服務單位：</label>
+            <div class="col-sm-7">
+                @Html.EditorFor(model => model.HistoryUnit2, new { htmlAttributes = new { @class = "form-control", placeholder = "請輸入服務單位" } })
+                @*<input class="form-control" placeholder="請輸入服務單位">*@
+            </div>
+
+            <!--<div class="col-sm-3">
+            @if (!string.IsNullOrEmpty(ViewData.ModelState["HistoryUnit2"]?.Errors.FirstOrDefault()?.ErrorMessage))
+            {
+                <span class="alertred"><i class="fa fa-exclamation-circle"></i> 服務單位必填</span>
+            }-->
+            <!-- <span class="alertred"><i class="fa fa-exclamation-circle"></i> 服務經歷必填</span> -->
+            <!--</div>-->
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">職　稱：</label>
+            <div class="col-sm-7">
+                @Html.EditorFor(model => model.HistoryJobTitle2, new { htmlAttributes = new { @class = "form-control", placeholder = "請輸入職稱" } })
+                @*<input class="form-control" placeholder="請輸入職稱">*@
+            </div>
+            <div class="col-sm-3">
+                @*@if (!string.IsNullOrEmpty(ViewData.ModelState["HistoryJobTitle1"]?.Errors.FirstOrDefault()?.ErrorMessage))
+                    {
+                        <span class="alertred"><i class="fa fa-exclamation-circle"></i> 職稱必填</span>
+                    }*@
+                <!-- <span class="alertred"><i class="fa fa-exclamation-circle"></i> 職稱必填</span> -->
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">起：</label>
+            <div class="col-sm-2">
+                @Html.EditorFor(model => model.StartYear2, new { htmlAttributes = new { @class = "form-control", placeholder = "年" } })
+                @*<input class="form-control" placeholder="年">*@
+            </div>
+            <div class="col-sm-2">
+                @Html.EditorFor(model => model.StartMonth2, new { htmlAttributes = new { @class = "form-control", placeholder = "月" } })
+                @*<input class="form-control" placeholder="月">*@
+            </div>
+            @*<div class="col-sm-3">
+                    @if (!string.IsNullOrEmpty(ViewData.ModelState["StartYear1"]?.Errors.FirstOrDefault()?.ErrorMessage))
+                    {
+                        <span class="alertred"><i class="fa fa-exclamation-circle"></i> 年必填</span>
+                    }
+                    @if (!string.IsNullOrEmpty(ViewData.ModelState["StartMonth1"]?.Errors.FirstOrDefault()?.ErrorMessage))
+                    {
+                        <span class="alertred"><i class="fa fa-exclamation-circle"></i> 月必填</span>
+                    }
+                </div>*@
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">迄：</label>
+            <div class="col-sm-2">
+                @Html.EditorFor(model => model.EndYear2, new { htmlAttributes = new { @class = "form-control", placeholder = "年" } })
+                @*<input class="form-control" placeholder="年">*@
+            </div>
+            <div class="col-sm-2">
+                @Html.EditorFor(model => model.EndMonth2, new { htmlAttributes = new { @class = "form-control", placeholder = "月" } })
+                @*<input class="form-control" placeholder="月">*@
+            </div>
+            @*<div class="col-sm-3">
+                    @if (!string.IsNullOrEmpty(ViewData.ModelState["EndYear1"]?.Errors.FirstOrDefault()?.ErrorMessage))
+                    {
+                        <span class="alertred"><i class="fa fa-exclamation-circle"></i> 年必填</span>
+                    }
+                    @if (!string.IsNullOrEmpty(ViewData.ModelState["EndMonth1"]?.Errors.FirstOrDefault()?.ErrorMessage))
+                    {
+                        <span class="alertred"><i class="fa fa-exclamation-circle"></i> 月必填</span>
+                    }
+                </div>*@
+        </div>
+        <!-- 服務經歷2 end -->
+        <!-- 服務經歷3 -->
+        <div class="form-group">
+            <label class="col-sm-2 control-label">服務單位：</label>
+            <div class="col-sm-7">
+                @Html.EditorFor(model => model.HistoryUnit3, new { htmlAttributes = new { @class = "form-control", placeholder = "請輸入服務單位" } })
+                @*<input class="form-control" placeholder="請輸入服務單位">*@
+            </div>
+            <div class="col-sm-3">
+                <!-- <span class="alertred"><i class="fa fa-exclamation-circle"></i> 服務經歷必填</span> -->
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">職　稱：</label>
+            <div class="col-sm-7">
+                @Html.EditorFor(model => model.HistoryJobTitle3, new { htmlAttributes = new { @class = "form-control", placeholder = "請輸入職稱" } })
+                @*<input class="form-control" placeholder="請輸入職稱">*@
+            </div>
+            <div class="col-sm-3">
+                <!-- <span class="alertred"><i class="fa fa-exclamation-circle"></i> 職稱必填</span> -->
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">起：</label>
+            <div class="col-sm-2">
+                @Html.EditorFor(model => model.StartYear3, new { htmlAttributes = new { @class = "form-control", placeholder = "年" } })
+                @*<input class="form-control" placeholder="年">*@
+            </div>
+            <div class="col-sm-2">
+                @Html.EditorFor(model => model.StartMonth3, new { htmlAttributes = new { @class = "form-control", placeholder = "月" } })
+                @*<input class="form-control" placeholder="月">*@
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">迄：</label>
+            <div class="col-sm-2">
+                @Html.EditorFor(model => model.EndYear3, new { htmlAttributes = new { @class = "form-control", placeholder = "年" } })
+                @*<input class="form-control" placeholder="年">*@
+            </div>
+            <div class="col-sm-2">
+                @Html.EditorFor(model => model.EndMonth3, new { htmlAttributes = new { @class = "form-control", placeholder = "年" } })
+                @*<input class="form-control" placeholder="月">*@
+            </div>
+        </div>
+        <!-- 服務經歷3 end -->
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 control-label">相關年資合計：</label>
+        <div class="col-sm-2">
+            @Html.EditorFor(model => model.TotalYear, new { htmlAttributes = new { @class = "form-control", placeholder = "合計年資(年)" } })
+            @*<input class="form-control" placeholder="年">*@
+            @if (!string.IsNullOrEmpty(ViewData.ModelState["TotalYear"]?.Errors.FirstOrDefault()?.ErrorMessage))
+            {
+                <span class="alertred"><i class="fa fa-exclamation-circle"></i> 合計年資(年)必填</span>
+            }
+        </div>
+        <div class="col-sm-2">
+            @Html.EditorFor(model => model.TotalMonth, new { htmlAttributes = new { @class = "form-control", placeholder = "合計年資(月)" } })
+            @*<input class="form-control" placeholder="月">*@
+            @if (!string.IsNullOrEmpty(ViewData.ModelState["TotalMonth"]?.Errors.FirstOrDefault()?.ErrorMessage))
+            {
+                <span class="alertred"><i class="fa fa-exclamation-circle"></i> 合計年資(月)必填</span>
+            }
+        </div>
+        <!--<div class="col-sm-3">-->
+        <!-- <span class="alertred"><i class="fa fa-exclamation-circle"></i> 相關年資合計必填</span> -->
+        <!--</div>-->
+    </div>
+
+    <hr>
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <button class="btn btn-primary solid blank" type="submit">確認修改</button>
+            <a class="btn btn-dark solid blank" href="@Url.Action("Board","Membership")">取消</a>
+        </div>
+    </div>
+}
+
+@*<div>
+        @Html.ActionLink("取消", "Board")
+    </div>*@

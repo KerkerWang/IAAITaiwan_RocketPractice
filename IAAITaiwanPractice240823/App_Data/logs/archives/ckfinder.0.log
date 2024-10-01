@@ -1,0 +1,834 @@
+Fatal | CKSource.CKFinder.Connector.Host.Owin.ConnectorMiddleware | 2024-08-30 10:49:37.4043 | A fatal error has occured.| System.Web.HttpException (0x800703E3): 用戶端已中斷連接。
+   於 System.Web.Hosting.IIS7WorkerRequest.EndFlush(IAsyncResult asyncResult)
+   於 System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   於 Microsoft.Owin.Host.SystemWeb.CallStreams.OutputStream.<FlushAsync>d__2.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 CKSource.CKFinder.Connector.Host.Owin.ConnectorMiddleware.<SetResponse>d__8.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   於 CKSource.CKFinder.Connector.Host.Owin.ConnectorMiddleware.<Invoke>d__3.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   於 Microsoft.Owin.Mapping.MapMiddleware.<Invoke>d__0.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   於 Microsoft.Owin.Host.SystemWeb.IntegratedPipeline.IntegratedPipelineContextStage.<RunApp>d__5.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   於 Microsoft.Owin.Security.Infrastructure.AuthenticationMiddleware`1.<Invoke>d__0.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   於 Microsoft.Owin.Host.SystemWeb.IntegratedPipeline.IntegratedPipelineContextStage.<RunApp>d__5.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   於 Microsoft.Owin.Host.SystemWeb.IntegratedPipeline.IntegratedPipelineContext.<DoFinalWork>d__2.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 Microsoft.Owin.Host.SystemWeb.IntegratedPipeline.StageAsyncResult.End(IAsyncResult ar)
+   於 System.Web.HttpApplication.AsyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   於 System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   於 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)    於 System.Web.Hosting.IIS7WorkerRequest.EndFlush(IAsyncResult asyncResult)
+   於 System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   於 Microsoft.Owin.Host.SystemWeb.CallStreams.OutputStream.<FlushAsync>d__2.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 CKSource.CKFinder.Connector.Host.Owin.ConnectorMiddleware.<SetResponse>d__8.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   於 CKSource.CKFinder.Connector.Host.Owin.ConnectorMiddleware.<Invoke>d__3.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   於 Microsoft.Owin.Mapping.MapMiddleware.<Invoke>d__0.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   於 Microsoft.Owin.Host.SystemWeb.IntegratedPipeline.IntegratedPipelineContextStage.<RunApp>d__5.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   於 Microsoft.Owin.Security.Infrastructure.AuthenticationMiddleware`1.<Invoke>d__0.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   於 Microsoft.Owin.Host.SystemWeb.IntegratedPipeline.IntegratedPipelineContextStage.<RunApp>d__5.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   於 Microsoft.Owin.Host.SystemWeb.IntegratedPipeline.IntegratedPipelineContext.<DoFinalWork>d__2.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 Microsoft.Owin.Host.SystemWeb.IntegratedPipeline.StageAsyncResult.End(IAsyncResult ar)
+   於 System.Web.HttpApplication.AsyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   於 System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   於 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+Fatal | CKSource.CKFinder.Connector.Core.CommandHandler | 2024-08-30 11:21:17.2154 | An unknown error has occured during execution of Proxy command.| System.Threading.Tasks.TaskCanceledException: 工作已取消。
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   於 CKSource.FileSystem.Local.LocalStorage.<FolderExistsAsync>d__14.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Nodes.Folder.<ExistsAsync>d__9.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Resources.ResourceType.<EnsureIsValidAsync>d__35.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.CommandParameters.<InitializeAsync>d__15.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.ProxyParameters.<InitializeAsync>d__14.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.Proxy.ProxyCommandImpl.<ExecuteAsync>d__9.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.CommandHandler.<ExecuteAsync>d__12.MoveNext()    於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   於 CKSource.FileSystem.Local.LocalStorage.<FolderExistsAsync>d__14.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Nodes.Folder.<ExistsAsync>d__9.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Resources.ResourceType.<EnsureIsValidAsync>d__35.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.CommandParameters.<InitializeAsync>d__15.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.ProxyParameters.<InitializeAsync>d__14.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.Proxy.ProxyCommandImpl.<ExecuteAsync>d__9.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.CommandHandler.<ExecuteAsync>d__12.MoveNext()
+Fatal | CKSource.CKFinder.Connector.Core.CommandHandler | 2024-08-30 11:21:17.2154 | An unknown error has occured during execution of Proxy command.| System.Threading.Tasks.TaskCanceledException: 工作已取消。
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   於 CKSource.FileSystem.Local.LocalStorage.<FolderExistsAsync>d__14.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Nodes.Folder.<ExistsAsync>d__9.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Resources.ResourceType.<EnsureIsValidAsync>d__35.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.CommandParameters.<InitializeAsync>d__15.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.ProxyParameters.<InitializeAsync>d__14.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.Proxy.ProxyCommandImpl.<ExecuteAsync>d__9.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.CommandHandler.<ExecuteAsync>d__12.MoveNext()    於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   於 CKSource.FileSystem.Local.LocalStorage.<FolderExistsAsync>d__14.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Nodes.Folder.<ExistsAsync>d__9.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Resources.ResourceType.<EnsureIsValidAsync>d__35.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.CommandParameters.<InitializeAsync>d__15.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.ProxyParameters.<InitializeAsync>d__14.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.Proxy.ProxyCommandImpl.<ExecuteAsync>d__9.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.CommandHandler.<ExecuteAsync>d__12.MoveNext()
+Fatal | CKSource.CKFinder.Connector.Core.CommandHandler | 2024-08-30 11:24:29.2604 | An unknown error has occured during execution of Proxy command.| System.Threading.Tasks.TaskCanceledException: 工作已取消。
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   於 CKSource.FileSystem.Local.LocalStorage.<FolderExistsAsync>d__14.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Nodes.Folder.<ExistsAsync>d__9.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Resources.ResourceType.<EnsureIsValidAsync>d__35.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.CommandParameters.<InitializeAsync>d__15.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.ProxyParameters.<InitializeAsync>d__14.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.Proxy.ProxyCommandImpl.<ExecuteAsync>d__9.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.CommandHandler.<ExecuteAsync>d__12.MoveNext()    於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   於 CKSource.FileSystem.Local.LocalStorage.<FolderExistsAsync>d__14.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Nodes.Folder.<ExistsAsync>d__9.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Resources.ResourceType.<EnsureIsValidAsync>d__35.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.CommandParameters.<InitializeAsync>d__15.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.ProxyParameters.<InitializeAsync>d__14.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.Proxy.ProxyCommandImpl.<ExecuteAsync>d__9.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.CommandHandler.<ExecuteAsync>d__12.MoveNext()
+Fatal | CKSource.CKFinder.Connector.Core.CommandHandler | 2024-08-30 11:24:29.2604 | An unknown error has occured during execution of Proxy command.| System.Threading.Tasks.TaskCanceledException: 工作已取消。
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   於 CKSource.FileSystem.Local.LocalStorage.<FolderExistsAsync>d__14.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Nodes.Folder.<ExistsAsync>d__9.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Resources.ResourceType.<EnsureIsValidAsync>d__35.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.CommandParameters.<InitializeAsync>d__15.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.ProxyParameters.<InitializeAsync>d__14.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.Proxy.ProxyCommandImpl.<ExecuteAsync>d__9.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.CommandHandler.<ExecuteAsync>d__12.MoveNext()    於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   於 CKSource.FileSystem.Local.LocalStorage.<FolderExistsAsync>d__14.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Nodes.Folder.<ExistsAsync>d__9.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Resources.ResourceType.<EnsureIsValidAsync>d__35.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.CommandParameters.<InitializeAsync>d__15.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.ProxyParameters.<InitializeAsync>d__14.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.Proxy.ProxyCommandImpl.<ExecuteAsync>d__9.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.CommandHandler.<ExecuteAsync>d__12.MoveNext()
+Fatal | CKSource.CKFinder.Connector.Core.CommandHandler | 2024-08-30 11:29:51.9300 | An unknown error has occured during execution of Proxy command.| System.Threading.Tasks.TaskCanceledException: 工作已取消。
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   於 CKSource.FileSystem.Local.LocalStorage.<FolderExistsAsync>d__14.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Nodes.Folder.<ExistsAsync>d__9.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Resources.ResourceType.<EnsureIsValidAsync>d__35.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.CommandParameters.<InitializeAsync>d__15.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.ProxyParameters.<InitializeAsync>d__14.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.Proxy.ProxyCommandImpl.<ExecuteAsync>d__9.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.CommandHandler.<ExecuteAsync>d__12.MoveNext()    於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   於 CKSource.FileSystem.Local.LocalStorage.<FolderExistsAsync>d__14.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Nodes.Folder.<ExistsAsync>d__9.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Resources.ResourceType.<EnsureIsValidAsync>d__35.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.CommandParameters.<InitializeAsync>d__15.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.ProxyParameters.<InitializeAsync>d__14.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.Proxy.ProxyCommandImpl.<ExecuteAsync>d__9.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.CommandHandler.<ExecuteAsync>d__12.MoveNext()
+Fatal | CKSource.CKFinder.Connector.Core.CommandHandler | 2024-08-30 11:29:51.9300 | An unknown error has occured during execution of Proxy command.| System.Threading.Tasks.TaskCanceledException: 工作已取消。
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   於 CKSource.FileSystem.Local.LocalStorage.<FolderExistsAsync>d__14.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Nodes.Folder.<ExistsAsync>d__9.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Resources.ResourceType.<EnsureIsValidAsync>d__35.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.CommandParameters.<InitializeAsync>d__15.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.ProxyParameters.<InitializeAsync>d__14.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.Proxy.ProxyCommandImpl.<ExecuteAsync>d__9.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.CommandHandler.<ExecuteAsync>d__12.MoveNext()    於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   於 CKSource.FileSystem.Local.LocalStorage.<FolderExistsAsync>d__14.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Nodes.Folder.<ExistsAsync>d__9.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Resources.ResourceType.<EnsureIsValidAsync>d__35.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.CommandParameters.<InitializeAsync>d__15.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.ProxyParameters.<InitializeAsync>d__14.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.Proxy.ProxyCommandImpl.<ExecuteAsync>d__9.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.CommandHandler.<ExecuteAsync>d__12.MoveNext()
+Fatal | CKSource.CKFinder.Connector.Core.CommandHandler | 2024-08-30 11:54:29.5358 | An unknown error has occured during execution of Proxy command.| System.Threading.Tasks.TaskCanceledException: 工作已取消。
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   於 CKSource.FileSystem.Local.LocalStorage.<FolderExistsAsync>d__14.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Nodes.Folder.<ExistsAsync>d__9.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Resources.ResourceType.<EnsureIsValidAsync>d__35.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.CommandParameters.<InitializeAsync>d__15.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.ProxyParameters.<InitializeAsync>d__14.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.Proxy.ProxyCommandImpl.<ExecuteAsync>d__9.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.CommandHandler.<ExecuteAsync>d__12.MoveNext()    於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   於 CKSource.FileSystem.Local.LocalStorage.<FolderExistsAsync>d__14.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Nodes.Folder.<ExistsAsync>d__9.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Resources.ResourceType.<EnsureIsValidAsync>d__35.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.CommandParameters.<InitializeAsync>d__15.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.ProxyParameters.<InitializeAsync>d__14.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.Proxy.ProxyCommandImpl.<ExecuteAsync>d__9.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.CommandHandler.<ExecuteAsync>d__12.MoveNext()
+Fatal | CKSource.CKFinder.Connector.Core.CommandHandler | 2024-08-30 11:54:29.5358 | An unknown error has occured during execution of Proxy command.| System.Threading.Tasks.TaskCanceledException: 工作已取消。
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   於 CKSource.FileSystem.Local.LocalStorage.<FolderExistsAsync>d__14.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Nodes.Folder.<ExistsAsync>d__9.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Resources.ResourceType.<EnsureIsValidAsync>d__35.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.CommandParameters.<InitializeAsync>d__15.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.ProxyParameters.<InitializeAsync>d__14.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.Proxy.ProxyCommandImpl.<ExecuteAsync>d__9.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.CommandHandler.<ExecuteAsync>d__12.MoveNext()    於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   於 CKSource.FileSystem.Local.LocalStorage.<FolderExistsAsync>d__14.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Nodes.Folder.<ExistsAsync>d__9.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Resources.ResourceType.<EnsureIsValidAsync>d__35.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.CommandParameters.<InitializeAsync>d__15.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.ProxyParameters.<InitializeAsync>d__14.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.Proxy.ProxyCommandImpl.<ExecuteAsync>d__9.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.CommandHandler.<ExecuteAsync>d__12.MoveNext()
+Fatal | CKSource.CKFinder.Connector.Core.CommandHandler | 2024-08-30 11:58:45.8585 | An unknown error has occured during execution of Proxy command.| System.Threading.Tasks.TaskCanceledException: 工作已取消。
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   於 CKSource.FileSystem.Local.LocalStorage.<FolderExistsAsync>d__14.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Nodes.Folder.<ExistsAsync>d__9.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Resources.ResourceType.<EnsureIsValidAsync>d__35.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.CommandParameters.<InitializeAsync>d__15.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.ProxyParameters.<InitializeAsync>d__14.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.Proxy.ProxyCommandImpl.<ExecuteAsync>d__9.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.CommandHandler.<ExecuteAsync>d__12.MoveNext()    於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   於 CKSource.FileSystem.Local.LocalStorage.<FolderExistsAsync>d__14.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Nodes.Folder.<ExistsAsync>d__9.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Resources.ResourceType.<EnsureIsValidAsync>d__35.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.CommandParameters.<InitializeAsync>d__15.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.ProxyParameters.<InitializeAsync>d__14.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.Proxy.ProxyCommandImpl.<ExecuteAsync>d__9.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.CommandHandler.<ExecuteAsync>d__12.MoveNext()
+Fatal | CKSource.CKFinder.Connector.Core.CommandHandler | 2024-08-30 11:58:45.8585 | An unknown error has occured during execution of Proxy command.| System.Threading.Tasks.TaskCanceledException: 工作已取消。
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   於 CKSource.FileSystem.Local.LocalStorage.<FolderExistsAsync>d__14.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Nodes.Folder.<ExistsAsync>d__9.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Resources.ResourceType.<EnsureIsValidAsync>d__35.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.CommandParameters.<InitializeAsync>d__15.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.ProxyParameters.<InitializeAsync>d__14.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.Proxy.ProxyCommandImpl.<ExecuteAsync>d__9.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.CommandHandler.<ExecuteAsync>d__12.MoveNext()    於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   於 CKSource.FileSystem.Local.LocalStorage.<FolderExistsAsync>d__14.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Nodes.Folder.<ExistsAsync>d__9.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Resources.ResourceType.<EnsureIsValidAsync>d__35.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.CommandParameters.<InitializeAsync>d__15.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.ProxyParameters.<InitializeAsync>d__14.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.Proxy.ProxyCommandImpl.<ExecuteAsync>d__9.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.CommandHandler.<ExecuteAsync>d__12.MoveNext()
+Fatal | CKSource.CKFinder.Connector.Core.CommandHandler | 2024-08-30 14:59:49.9543 | An unknown error has occured during execution of Proxy command.| System.Threading.Tasks.TaskCanceledException: 工作已取消。
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   於 CKSource.FileSystem.Local.LocalStorage.<FolderExistsAsync>d__14.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Nodes.Folder.<ExistsAsync>d__9.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Resources.ResourceType.<EnsureIsValidAsync>d__35.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.CommandParameters.<InitializeAsync>d__15.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.ProxyParameters.<InitializeAsync>d__14.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.Proxy.ProxyCommandImpl.<ExecuteAsync>d__9.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.CommandHandler.<ExecuteAsync>d__12.MoveNext()    於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   於 CKSource.FileSystem.Local.LocalStorage.<FolderExistsAsync>d__14.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Nodes.Folder.<ExistsAsync>d__9.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Resources.ResourceType.<EnsureIsValidAsync>d__35.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.CommandParameters.<InitializeAsync>d__15.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.ProxyParameters.<InitializeAsync>d__14.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.Proxy.ProxyCommandImpl.<ExecuteAsync>d__9.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.CommandHandler.<ExecuteAsync>d__12.MoveNext()
+Fatal | CKSource.CKFinder.Connector.Core.CommandHandler | 2024-08-30 14:59:49.9543 | An unknown error has occured during execution of Proxy command.| System.Threading.Tasks.TaskCanceledException: 工作已取消。
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   於 CKSource.FileSystem.Local.LocalStorage.<FolderExistsAsync>d__14.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Nodes.Folder.<ExistsAsync>d__9.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Resources.ResourceType.<EnsureIsValidAsync>d__35.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.CommandParameters.<InitializeAsync>d__15.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.ProxyParameters.<InitializeAsync>d__14.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.Proxy.ProxyCommandImpl.<ExecuteAsync>d__9.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.CommandHandler.<ExecuteAsync>d__12.MoveNext()    於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   於 CKSource.FileSystem.Local.LocalStorage.<FolderExistsAsync>d__14.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Nodes.Folder.<ExistsAsync>d__9.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Resources.ResourceType.<EnsureIsValidAsync>d__35.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.CommandParameters.<InitializeAsync>d__15.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.ProxyParameters.<InitializeAsync>d__14.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.Proxy.ProxyCommandImpl.<ExecuteAsync>d__9.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.CommandHandler.<ExecuteAsync>d__12.MoveNext()
+Fatal | CKSource.CKFinder.Connector.Core.CommandHandler | 2024-08-30 15:09:09.3942 | An unknown error has occured during execution of Proxy command.| System.Threading.Tasks.TaskCanceledException: 工作已取消。
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   於 CKSource.FileSystem.Local.LocalStorage.<FolderExistsAsync>d__14.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Nodes.Folder.<ExistsAsync>d__9.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Resources.ResourceType.<EnsureIsValidAsync>d__35.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.CommandParameters.<InitializeAsync>d__15.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.ProxyParameters.<InitializeAsync>d__14.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.Proxy.ProxyCommandImpl.<ExecuteAsync>d__9.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.CommandHandler.<ExecuteAsync>d__12.MoveNext()    於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   於 CKSource.FileSystem.Local.LocalStorage.<FolderExistsAsync>d__14.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Nodes.Folder.<ExistsAsync>d__9.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Resources.ResourceType.<EnsureIsValidAsync>d__35.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.CommandParameters.<InitializeAsync>d__15.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.ProxyParameters.<InitializeAsync>d__14.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.Proxy.ProxyCommandImpl.<ExecuteAsync>d__9.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.CommandHandler.<ExecuteAsync>d__12.MoveNext()
+Fatal | CKSource.CKFinder.Connector.Core.CommandHandler | 2024-08-30 15:09:09.3942 | An unknown error has occured during execution of Proxy command.| System.Threading.Tasks.TaskCanceledException: 工作已取消。
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   於 CKSource.FileSystem.Local.LocalStorage.<FolderExistsAsync>d__14.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Nodes.Folder.<ExistsAsync>d__9.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Resources.ResourceType.<EnsureIsValidAsync>d__35.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.CommandParameters.<InitializeAsync>d__15.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.ProxyParameters.<InitializeAsync>d__14.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.Proxy.ProxyCommandImpl.<ExecuteAsync>d__9.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.CommandHandler.<ExecuteAsync>d__12.MoveNext()    於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   於 CKSource.FileSystem.Local.LocalStorage.<FolderExistsAsync>d__14.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Nodes.Folder.<ExistsAsync>d__9.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Resources.ResourceType.<EnsureIsValidAsync>d__35.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.CommandParameters.<InitializeAsync>d__15.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.ProxyParameters.<InitializeAsync>d__14.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.Commands.Proxy.ProxyCommandImpl.<ExecuteAsync>d__9.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 CKSource.CKFinder.Connector.Core.CommandHandler.<ExecuteAsync>d__12.MoveNext()

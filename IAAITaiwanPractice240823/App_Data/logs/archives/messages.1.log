@@ -1,0 +1,54 @@
+Fatal | CKSource.CKFinder.Connector.Core.CommandHandler | 2024-08-23 15:50:17.0218 | An unknown error has occured during execution of GetFiles command.| System.Runtime.InteropServices.COMException (0x800700B7): 檔案名稱: \\?\C:\Users\user\source\rocket_teams\IAAITaiwanPractice240823\IAAITaiwanPractice240823\web.config
+行號: 145
+錯誤: 在唯一金鑰屬性 'fileExtension' 設為 '.json' 的情況下，無法新增類型 'mimeMap' 的重複集合項目
+
+
+   於 System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   於 System.Web.MimeMapping.MimeMappingDictionaryIntegrated.PopulateMappings()
+   於 System.Web.MimeMapping.MimeMappingDictionaryBase.EnsureMapping()
+   於 System.Web.MimeMapping.MimeMappingDictionaryBase.GetMimeMapping(String fileName)
+   於 CKSource.FileSystem.Local.LocalFileInfo..ctor(FileInfo systemInfo)
+   於 CKSource.FileSystem.Local.LocalStorage.<>c__DisplayClass25_0.<GetFileInfosInternalAsync>b__0()
+   於 System.Threading.Tasks.Task`1.InnerInvoke()
+   於 System.Threading.Tasks.Task.Execute()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   於 CKSource.FileSystem.Local.LocalStorage.<GetFileInfosInternalAsync>d__25.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   於 CKSource.FileSystem.Local.LocalStorage.<GetFileInfosAsync>d__19.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 CKSource.CKFinder.Connector.Core.Nodes.Folder.<ListFilesAsync>d__12.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 CKSource.CKFinder.Connector.Core.Commands.GetFiles.GetFilesCommandImpl.<ExecuteAsync>d__5.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 CKSource.CKFinder.Connector.Core.CommandHandler.<ExecuteAsync>d__12.MoveNext()    於 System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   於 System.Web.MimeMapping.MimeMappingDictionaryIntegrated.PopulateMappings()
+   於 System.Web.MimeMapping.MimeMappingDictionaryBase.EnsureMapping()
+   於 System.Web.MimeMapping.MimeMappingDictionaryBase.GetMimeMapping(String fileName)
+   於 CKSource.FileSystem.Local.LocalFileInfo..ctor(FileInfo systemInfo)
+   於 CKSource.FileSystem.Local.LocalStorage.<>c__DisplayClass25_0.<GetFileInfosInternalAsync>b__0()
+   於 System.Threading.Tasks.Task`1.InnerInvoke()
+   於 System.Threading.Tasks.Task.Execute()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   於 CKSource.FileSystem.Local.LocalStorage.<GetFileInfosInternalAsync>d__25.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   於 CKSource.FileSystem.Local.LocalStorage.<GetFileInfosAsync>d__19.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 CKSource.CKFinder.Connector.Core.Nodes.Folder.<ListFilesAsync>d__12.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 CKSource.CKFinder.Connector.Core.Commands.GetFiles.GetFilesCommandImpl.<ExecuteAsync>d__5.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   於 CKSource.CKFinder.Connector.Core.CommandHandler.<ExecuteAsync>d__12.MoveNext()

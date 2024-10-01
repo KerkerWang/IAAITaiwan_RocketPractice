@@ -1,0 +1,38 @@
+﻿@model MvcPaging.IPagedList<IAAITaiwanPractice240823.Models.Knowledge>
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@foreach (var item in Model)
+{
+    <div class="post">
+        <div class="row">
+            <div class="col-md-3 col-sm-12 col-xs-12">
+                <div class="post-media post-image">
+                    <a href="@Url.Action("Details", "Knowledges", new { id = item.Id })"><img alt="img" src="@Html.Raw(item.Cover)" class="img-responsive"></a>
+                </div>
+            </div>
+            <div class="col-md-9 col-sm-12 col-xs-12">
+                <div class="post-body">
+                    <div class="entry-header">
+                        <span class="post-meta-date"><i class="fa fa fa-clock-o"></i> @item.PublishDate.ToString("yyyy/MM/dd")</span>
+                        <h3 class="entry-title">
+                            @Html.ActionLink($"{item.Title}", "Details", new { id = item.Id })
+                        </h3>
+                        <p>@Html.Raw(item.Content)</p>
+                    </div>
+                    <!-- header end -->
+                    <div class="post-footer">
+                        @Html.ActionLink("more", "Details", new { id = item.Id }, new { @class = "btn btn-primary" })
+                    </div>
+                </div>
+                <!-- post-body end -->
+            </div>
+        </div>
+    </div>
+}
+<div class="paging text-center">
+    <ul class="pagination">
+        @Html.Pager(Model.PageSize, Model.PageNumber, Model.TotalItemCount)
+    </ul>
+</div>

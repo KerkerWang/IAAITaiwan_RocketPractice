@@ -1,0 +1,62 @@
+﻿@*@model IEnumerable<IAAITaiwanPractice240823.Models.News>*@
+@model MvcPaging.IPagedList<IAAITaiwanPractice240823.Models.News>
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@foreach (var item in Model)
+{
+    <div class="post">
+        <div class="row">
+            <div class="col-md-3 col-sm-12 col-xs-12">
+                <div class="post-media post-image">
+                    <a href="@Url.Action("Details", "News", new { id = item.Id })"><img alt="img" src="@Html.Raw(item.Cover)" class="img-responsive"></a>
+                </div>
+            </div>
+            <div class="col-md-9 col-sm-12 col-xs-12">
+                <div class="post-body">
+                    <div class="entry-header">
+                        <span class="post-meta-date"><i class="fa fa fa-clock-o"></i> @item.PublishDate.ToString("yyyy/MM/dd")</span>
+                        <h3 class="entry-title">
+                            @*<a href="News/Details/@item.Id">@item.Title</a>*@
+                            @Html.ActionLink($"{item.Title}", "Details", new { id = item.Id })
+                        </h3>
+                        <p>@Html.Raw(item.Content)</p>
+                    </div>
+                    <!-- header end -->
+                    <div class="post-footer">
+                        @Html.ActionLink("more", "Details", new { id = item.Id }, new { @class = "btn btn-primary" })
+                    </div>
+                </div>
+                <!-- post-body end -->
+            </div>
+        </div>
+    </div>
+}
+@*@if (Model.TotalPages > 1)
+    {*@
+<div class="paging text-center">
+    <ul class="pagination">
+        @*<li><a href="#"><i class="fa fa-angle-double-left"></i></a></li>*@
+        @*@for (int i = 1; i <= Model.TotalPages; i++)
+            {
+                <li class="active"><a href="#">@i</a></li>
+            }*@
+        @Html.Pager(Model.PageSize, Model.PageNumber, Model.TotalItemCount)
+        @*<li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#"><i class="fa fa-angle-double-right"></i></a></li>*@
+    </ul>
+
+    @*<div class="paging text-center">
+            <span class="disabled">«</span>
+            <span class="current">1</span>
+            <a href="/news?page=2" title="">2</a>
+            <a href="/news?page=3" title="">3</a>
+            <a href="/news?page=4" title="">4</a>
+            <a href="/news?page=2" title="Next page">»</a>
+        </div>*@
+</div>
+@*}*@

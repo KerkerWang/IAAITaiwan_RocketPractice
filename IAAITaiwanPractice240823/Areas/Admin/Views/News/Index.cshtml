@@ -1,0 +1,139 @@
+﻿@model IEnumerable<IAAITaiwanPractice240823.Models.News>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        @*<th>
+                @Html.DisplayNameFor(model => model.Creator.Account)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Updater.Account)
+            </th>*@
+        <th>
+            @Html.DisplayNameFor(model => model.PublishDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        @*<th>
+                @Html.DisplayNameFor(model => model.Content)
+            </th>*@
+        <th>
+            @Html.DisplayNameFor(model => model.IsPinned)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Cover)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CreateTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CreateByName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LastUpdateTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LastUpdateByName)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            @*<td>
+                    @Html.DisplayFor(modelItem => item.Creator.Account)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Updater.Account)
+                </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.PublishDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            @*<td>
+                    @Html.DisplayFor(modelItem => item.Content)
+                </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.IsPinned)
+            </td>
+            <td>
+                <img src="@Url.Content(item.Cover)" alt="Cover Image" style="width:100px; height:auto;" class="rounded" />
+                <div class="form-group">
+                    @*<label>File upload</label>*@
+                    <input type="file" name="CoverFile_@item.Id" class="file-upload-default">
+                    <div class="input-group col-xs-12">
+                        <input type="text" class="form-control file-upload-info" disabled placeholder="Upload Image">
+                        <span class="input-group-append">
+                            <button class="file-upload-browse btn btn-success" type="button">選擇照片</button>
+                        </span>
+                    </div>
+                </div>
+                @*<input type="file" value="上傳照片" name="CoverFile_@item.Id" class="file-upload-info" />*@
+                <input type="button" value="更換照片" class="btn btn-outline-success" onclick="uploadCover(@item.Id)" />
+                @*@Html.DisplayFor(modelItem => item.Cover)*@
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreateTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreateByName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastUpdateTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastUpdateByName)
+            </td>
+            <td>
+                @Html.ActionLink("編輯內容", "Edit", new { id = item.Id }) |
+                @*@Html.ActionLink("Details", "Details", new { id = item.Id }) |*@
+                @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+            </td>
+        </tr>
+    }
+</table>
+@section scripts{
+    <script src="@Url.Content("~/assets/js/file-upload.js")" type="text/javascript"></script>
+    <script>
+        function uploadCover(itemId) {
+    var fileInput = document.querySelector(`input[name='CoverFile_${itemId}']`);
+    var formData = new FormData();
+
+    if (fileInput.files.length === 0) {
+        alert("請先選擇一張照片");
+        return;
+    }
+
+    formData.append('CoverFile', fileInput.files[0]);
+    formData.append('Id', itemId);
+
+    $.ajax({
+        url: '@Url.Action("UpdateCover", "News")', // 改成你的Controller和Action名稱
+        type: 'POST',
+        data: formData,
+        contentType: false,
+        processData: false,
+        success: function (response) {
+            alert("封面圖片已更新！");
+            location.reload(); // 更新頁面
+        },
+        error: function (xhr, status, error) {
+            alert("更新失敗: " + error);
+        }
+    });
+}
+    </script>
+}

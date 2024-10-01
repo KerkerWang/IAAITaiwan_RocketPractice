@@ -1,0 +1,178 @@
+﻿@model IAAITaiwanPractice240823.Models.ViewModel.MemberEditVM
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4>Member</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.Id)
+        @Html.HiddenFor(model => model.PasswordSalt)
+        @Html.HiddenFor(model => model.Password)
+        @Html.HiddenFor(model => model.CreateTime)
+        @Html.HiddenFor(model => model.CreateBy)
+        @Html.HiddenFor(model => model.LastUpdateTime)
+        @Html.HiddenFor(model => model.LastUpdateBy)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Account, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Account, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Account, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        @*<div class="form-group">
+                @Html.LabelFor(model => model.PasswordSalt, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.PasswordSalt, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.PasswordSalt, "", new { @class = "text-danger" })
+                </div>
+            </div>*@
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.NewPassword, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.NewPassword, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.NewPassword, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Permission, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.HiddenFor(model => model.Permission, new { htmlAttributes = new { @class = "form-control" } })
+                <div class="tree"></div>
+                @*@Html.Raw(ViewBag.PermissionTree)*@
+                @Html.ValidationMessageFor(model => model.Permission, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.IsAdmin, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <div class="checkbox">
+                    @Html.EditorFor(model => model.IsAdmin)
+                    @Html.ValidationMessageFor(model => model.IsAdmin, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.CreateTime, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DisplayFor(model => model.CreateTime, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.CreateTime, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.CreateBy, "CreateBy", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DisplayFor(model => model.CreateByName, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.CreateBy, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.LastUpdateTime, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DisplayFor(model => model.LastUpdateTime, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.LastUpdateTime, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.LastUpdateBy, "LastUpdateBy", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DisplayFor(model => model.LastUpdateBy, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.LastUpdateBy, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+@section scripts{
+    <script src="/dist/tree.min.js"></script>
+    <script>
+        // prettier-ignore
+        //let data = [{
+        //    "id": "A01",
+        //    "text": "首頁",
+        //}, {
+        //    "id": "B",
+        //    "text": "基本資料管理",
+        //    "children": [{
+        //        "id": "B01",
+        //        "text": "帳號管理"
+        //    }, {
+        //        "id": "B02",
+        //        "text": "組織管理"
+        //    },
+        //    ]
+        //}, {
+        //    "id": "C",
+        //    "text": "個人資料管理",
+        //    "children": [{
+        //        "id": "C01",
+        //        "text": "個人資料修改"
+        //    }, {
+        //        "id": "C02",
+        //        "text": "更改密碼"
+        //    },
+        //    ]
+        //}
+        //]
+        let data = @Html.Raw(ViewBag.Tree);
+
+        let tree = new Tree('.tree', {
+            data: data,
+            closeDepth: 3,
+            loaded: function () {
+                this.values = @Html.Raw(ViewBag.PermissionTree);
+                console.log(this.selectedNodes);
+                console.log(this.values);
+                //this.disables = ['0-0-0', '0-0-1', '0-0-2']
+            },
+            onChange: function () {
+                console.log(this.values);
+                $("#Permission").val(this.values)
+            }
+        })
+    </script>
+
+}
