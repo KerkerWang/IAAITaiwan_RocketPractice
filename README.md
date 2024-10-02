@@ -1,3 +1,4 @@
+![縱火調查協會封面](https://github.com/user-attachments/assets/4f3b207e-2110-42c2-a8eb-eebed5b0c485)
 # 縱火調查協會官網 <img alt="MVC5" src="https://img.shields.io/badge/.NET_Framework-MVC_5-Green">
 本專案以 C# 語言進行撰寫，使用 ASP.NET MVC 進行網站前後台開發。  
 前台使用者除了可以進行頁面瀏覽外，會員能在登入後於留言板進行討論。  
@@ -20,7 +21,18 @@
 - 新增、修改、刪除各類數據
 - 管理後台管理者的權限
 
+## 畫面
+### 討論區
+<div><img width="50% alt="討論區" src="https://github.com/user-attachments/assets/fbfb985d-8d83-4e3e-8d74-9dc8cdd9768a"/></div>
+
+### 聯絡我們  
+<div><img width="50% alt="聯絡我們" src="https://github.com/user-attachments/assets/01fac329-bc53-4f31-b1ec-6b0e198f16f0"/></div>
+
+### 後台編輯頁面
+<div><img width="50% alt="後台編輯頁面" src="https://github.com/user-attachments/assets/aa909483-1467-433e-a6f4-5d1e32e97a92"/></div>
+
 ## 技術與工具介紹
+
 ### 開發環境
 - 框架：.NET Framework 4.8
 - 專案類型：ASP.NET MVC 5
